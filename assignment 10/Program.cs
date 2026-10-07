@@ -31,3 +31,14 @@ public Shipment ShallowCopy()
 }
 
 
+public class DeliveryAddress
+{
+    public string City { get; set; }
+
+    public DeliveryAddress(string city)
+    {
+        City = city;
+    }
+}
+
+

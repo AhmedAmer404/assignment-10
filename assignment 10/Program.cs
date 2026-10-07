@@ -42,3 +42,14 @@ public class DeliveryAddress
 }
 
 
+public Shipment DeepCopy()
+{
+    return new Shipment(
+        TrackingCode,
+        ShipmentType,
+        Weight,
+        new DeliveryAddress(DeliveryAddress.City)
+    );
+}
+
+

@@ -24,3 +24,10 @@
         );
     }
 }
+
+public Shipment ShallowCopy()
+{
+    return (Shipment)this.MemberwiseClone();
+}
+
+
